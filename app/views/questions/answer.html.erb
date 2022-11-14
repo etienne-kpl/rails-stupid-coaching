@@ -1,0 +1,12 @@
+<div class="display-question">
+  <p><%= @question %></p>
+  <p class="mb-0"><em>–You</em></p>
+</div>
+
+<div class="display-answer">
+  <p><strong><%= @answer %></strong></p>
+  <p class="mb-0"><em>–Your Coach</em></p>
+</div>
+
+<%# On rajoute un chemin vers ask %>
+<%= link_to "Ask a new question", ask_path, class: "btn btn-link" %>
